@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.first-main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.main{
+    width: 35vw;
+    background-color: rgb(166, 197, 197);
+    padding: 30px 60px;
+    border-radius: 3px;
+    box-shadow: 2px 5px 10px rgb(95, 95, 95);
+}
+#ulist{
+    list-style-type: none;
+}
+#ulist li{
+    margin: 15px 0 15px 0;
+    font-size: 20px;
+}
+.answer{
+    font-size: 20px;
+}
+#submit{
+    width: 100%;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+input{
+    cursor: pointer;
+}
+.hidden-btn{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    background-color: aquamarine;
+}
+#score-img{
+    text-align: center;
+    font-size: 26px;
+    margin-top: 150px;
+    font-weight: 300;
+}
