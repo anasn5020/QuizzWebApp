@@ -16,7 +16,8 @@ $statment = "INSERT INTO signup  VALUES ('$name','$email','$username',
 '$password')";
 // After Successfully Submittion!
 if(mysqli_query($conn, $statment)){
-echo "<h3>You have Successfully Login!</h3>";
+    echo "<h3>You've Successfully Created Account!</h3>";
+    echo "<a href='/index.html'>Click To Login</a>";
 }
 else{
 echo "ERROR: Hush! Sorry $sql. "

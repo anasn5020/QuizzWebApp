@@ -14,7 +14,8 @@ $statment = "INSERT INTO login  VALUES ('$email',
 '$pass')";
 // After Successfully Submittion!
 if(mysqli_query($conn, $statment)){
-echo "<h3>You have Successfully Login!</h3>";
+    echo "<h3>You've Successfully Login!</h3>";
+    echo "<a href='/main.html'>Click To Login</a>";
 
 // echo nl2br("First Name:$fName\n Last Name: $lName\n "
 // . "Email: $email\n Number:$number\n Message:$message");
