@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="" />
+    <link rel="shortcut icon" href="/images/key.png" type="image/x-icon">
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
@@ -62,9 +63,9 @@
         style="background-image: url('images/bg-01.jpg')"
       >
         <div class="wrap-login100">
-          <form class="login100-form validate-form" action="/api/index.php">
+          <form class="login100-form validate-form" method="post" action="/api/login.php">
             <span class="login100-form-logo">
-              <i class="zmdi zmdi-landscape"></i>
+              <img src="/images/key.png"  style="width: 100px;" alt="">
             </span>
 
             <span class="login100-form-title p-b-34 p-t-27"> Log in </span>
@@ -114,7 +115,7 @@
                 class="txt1"
                 href="#"
                 style="cursor: pointer"
-                OnClick="location.href='index2.html'"
+                OnClick="location.href='signup.html'"
               >
                 Create An Account? Sign Up
               </a>

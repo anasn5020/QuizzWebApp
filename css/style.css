@@ -3,20 +3,29 @@
   margin: 0px;
   box-sizing: border-box;
 }
+body {
+  min-width: 300px;
+}
 .first-main {
   min-height: 100vh;
   display: grid;
   place-items: center;
 }
 .main {
-  width: 35vw;
-  background-color: rgb(166, 197, 197);
+  width: 40vw;
+  min-width: 300px;
+  background-color: rgb(255, 255, 255);
   padding: 30px 60px;
   border-radius: 3px;
-  box-shadow: 2px 5px 10px rgb(95, 95, 95);
+  transition: all 0.7s ease-in-out;
+  box-shadow: -2px 5px 10px rgb(0, 0, 0);
+}
+.main:hover{
+  box-shadow: -6px 10px 20px rgb(0, 0, 0);
 }
 #ulist {
   list-style-type: none;
+  padding-left: 0px !important;
 }
 #ulist li {
   margin: 15px 0 15px 0;
@@ -31,6 +40,10 @@
   background-color: blueviolet;
   color: white;
   padding: 10px;
+  transition: all 0.5s linear;
+}
+#submit:hover {
+  background-color: rgb(53, 3, 100);
 }
 input {
   cursor: pointer;
@@ -46,4 +59,91 @@ input {
   font-size: 26px;
   margin-top: 150px;
   font-weight: 300;
+}
+@media screen and (max-width: 425px) {
+  .main {
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 60px;
+    border-radius: 3px;
+    box-shadow: 2px 5px 10px rgb(95 95 95);
+  }
+  .question {
+    font-size: 15px;
+  }
+  #ulist {
+    padding-left: 0px !important;
+  }
+  #ulist li {
+    margin: 15px 0 15px 0;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 576px) {
+  .main {
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 60px;
+    border-radius: 3px;
+    box-shadow: 2px 5px 10px rgb(95 95 95);
+  }
+  .question {
+    font-size: 17px;
+  }
+  #ulist {
+    padding-left: 0px !important;
+  }
+  #ulist li {
+    margin: 15px 0 15px 0;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .main {
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 60px;
+    border-radius: 3px;
+    box-shadow: 2px 5px 10px rgb(95 95 95);
+  }
+  .question {
+    font-size: 18px;
+  }
+  #ulist {
+    padding-left: 0px !important;
+  }
+  #ulist li {
+    margin: 15px 0 15px 0;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .main {
+    width: 60vw;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 60px;
+    border-radius: 3px;
+    box-shadow: 2px 5px 10px rgb(95 95 95);
+  }
+  .question {
+    font-size: 28px;
+  }
+  #ulist {
+    padding-left: 0px !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1025px) {
+  .main {
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 60px;
+    border-radius: 3px;
+    box-shadow: 2px 5px 10px rgb(95 95 95);
+  }
+  .question {
+    font-size: 33px;
+  }
+  #ulist {
+    padding-left: 0px !important;
+  }
 }

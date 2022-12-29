@@ -32,20 +32,23 @@ const Quizz = [
     ans: "ans2",
   },
 ];
+// Getting Questions
 const question = document.querySelector(".question");
+// Getting Options
 const option1 = document.querySelector("#option1");
 const option2 = document.querySelector("#option2");
 const option3 = document.querySelector("#option3");
 const option4 = document.querySelector("#option4");
+// Getting Submit Button
 const submit = document.querySelector("#submit");
 
 const answers = document.querySelectorAll(".answer");
-
+// Getting Div Which shows Score
 const showscore = document.querySelector("#showscore");
 
 let questionCount = 0;
 let score = 0;
-
+// Function for Changing The Questions and Options
 const loadQuestion = () => {
   const questionList = Quizz[questionCount];
   question.innerHTML = questionList.question;
